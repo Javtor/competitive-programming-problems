@@ -27,23 +27,16 @@ int main()
 #else
 #define endl '\n'
 #endif
-    int sz[128];
-    mset(sz,0);
+    vi sz;
     char c;
     while(cin>>c){
         if(c=='+')continue;
-        sz[c]++;
+        sz.pb(c-'0');
     }
-    fore(i,0,sz['1']){
-        cout<<'1';
-        
-    }
-    fore(i,0,sz['2']){
-        cout<<"+2";
-    }
-    fore(i,0,sz['3']){
-        cout<<"+3";
-        if(i!=sz['1']-1)cout<<'+';
+    sort(ALL(sz));
+    fore(i,0,SZ(sz)){
+        if(i)cout<<'+';
+        cout<<sz[i];
     }
     return 0;
 }

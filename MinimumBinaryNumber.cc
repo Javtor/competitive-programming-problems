@@ -27,12 +27,10 @@ int main()
     freopen("output.txt", "w", stdout);
 #endif
     int n; cin >>n;
-    char c; cin >>c;
-    n--;
-    cout<<c;
-    while(n--){
-        cin >>c;
-        if(c=='0')cout<<'0';
-    }
+    string s;cin>>s;
+    int o=0,z=0;
+    fore(i,0,n)if(s[i]=='1')o++;else z++;
+    if(o)cout<<'1';
+    fore(i,0,z)cout<<'0';
     return 0;
 }

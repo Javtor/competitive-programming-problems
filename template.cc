@@ -16,6 +16,10 @@ typedef pair<ll,ll> ii;
 #define SZ(x) ((int)x.size())
 #define FIN ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 
+void solve(){
+
+}
+
 int main()
 {
     FIN;
@@ -25,6 +29,8 @@ int main()
 #else
 #define endl '\n'
 #endif
-    
+    int t=1;
+    // cin>>t;
+    while(t--)solve();
     return 0;
 }
