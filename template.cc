@@ -1,6 +1,3 @@
-#ifndef LOCAL
-#pragma GCC optimize(2)
-#endif
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
@@ -20,15 +17,7 @@ void solve(){
 
 }
 
-int main()
-{
-    FIN;
-#ifdef LOCAL
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#else
-#define endl '\n'
-#endif
+int main(){FIN;
     int t=1;
     // cin>>t;
     while(t--)solve();
