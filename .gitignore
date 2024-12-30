@@ -9,3 +9,7 @@
 .cph/
 *.exe
 *.bin
+*.o
+*.class
+*.out
+*.txt
