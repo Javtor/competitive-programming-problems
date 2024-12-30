@@ -1,3 +1,9 @@
+# Ignore files without extension
+*
+!/**/
+!*.*
+
+
 *.dSYM/
 .vscode/
 .cph/
