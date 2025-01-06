@@ -14,12 +14,20 @@ typedef pair<ll,ll> ii;
 #define FIN ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 
 void solve(){
-
+    int n,d;cin>>n>>d;
+    vi digits;
+    digits.pb(1);
+    if (d%3==0 || n>=3) digits.pb(3);
+    if (d==5) digits.pb(5);
+    if (d == 7 || n>2) digits.pb(7);
+    if (d==9 || n >= 6 || (d%3==0 && n>=3))digits.pb(9);
+    fore(i,0,SZ(digits)) cout<<digits[i]<<' ';
+    cout<<endl;
 }
 
 int main(){FIN;
     int t=1;
-    // cin>>t;
+    cin>>t;
     while(t--)solve();
     return 0;
 }
